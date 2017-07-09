@@ -1,7 +1,7 @@
 body {
   background: #f06226;
   color: #fff;
-  font-family: Helvetica Arial sans-serif;
+  font-family: Verdana;
   font-size: 14px;
 }
 
@@ -13,6 +13,9 @@ body {
    padding: 25px;
 }
 
+header, footer {
+  font-family: Georgia;
+}
 header {
   text-align: center;
   border-bottom: 1px dashed #fff;
@@ -31,18 +34,29 @@ header p {
 
 section {
   min-height: 400px;
+  line-height: 1.5em;
 }
 
+section h3 {
+  margin-bottom: 0;
+  font-weight: 100;
+}
 footer {
   text-align: center;
 }
 
 input[type=submit] {
+  margin-top: 30px;
   background: #f06226;
   border: 0;
   color: #fff;
   padding: 10px 15px;
   cursor: pointer;
+}
+
+label::after {
+  content: ' ';
+  display: block;
 }
 
 #results h3 {
