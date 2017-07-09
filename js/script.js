@@ -20,7 +20,10 @@ function submitAnswers() {
     if ( eval(`q${i+1}`) === answers[i] )
       score++;
 
-  alert(score)
+  const resultText = `<h3>You scored <span>${score}</span> out of <span>${total}</span></h3>`
+  results = document.getElementById('results')
+  results.innerHTML = resultText
+  alert(`You scored ${score} out of ${total}`)
 
   return false
 }
